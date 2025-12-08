@@ -138,15 +138,24 @@ sub .comment {
     align-items: center; /*上下真ん中*/
 }
 
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 img /*160/90*/ {
     border: outset;
     background-color: #000;
-    width: 135px; /*90*16*/
-    height: 70px; /*55*9*/
+    width: 90px;
+    height: 55px;
     margin: 5px 5px 5px 5px;
 }
 img.type1 /*写真のサイズを個別に変えられる*/ {
     width: 90px;
+    height: 90px;
+}
+img.type2 /*写真のサイズを個別に変えられる*/ {
+    width: 45px;
     height: 90px;
 }
 
