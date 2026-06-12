@@ -1,0 +1,387 @@
+﻿<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>自己紹介サイト_作品等紹介</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <script>
+      function filterWorks(category) {
+        const works = document.querySelectorAll(".work-item");
+
+        works.forEach((work) => {
+          if (category === "all" || work.classList.contains(category)) {
+            work.style.display = "block";
+          } else {
+            work.style.display = "none";
+          }
+        });
+      }
+    </script>
+    <header>
+      <div class="flex">
+        <a href="profile.html" rel="noopener"
+          ><figure class="image">
+            <img src="Media/001_original.jpg" class="type1" /></figure
+        ></a>
+        <a href="profile.html" rel="noopener" style="color: white">PROFILE</a>
+        ｜
+        <a href="works.html" rel="noopener" style="color: rgb(200, 200, 200)"
+          >WORKS</a
+        >
+        ｜
+        <a href="contact.html" rel="noopener" style="color: white">CONTACT</a>
+      </div>
+    </header>
+
+    <div class="box">
+      <main>
+        <section class="sidebar">
+          <div>
+            <img src="Media/002_Org-Skin-3D.png" class="type2" />
+          </div>
+        </section>
+
+        <section class="maincontent">
+          <div>
+            <h1>木村 有喜</h1>
+            <p></p>
+          </div>
+        </section>
+      </main>
+
+      <div class="genre-menu">
+        <button onclick="filterWorks('all')">すべて</button>
+        <button onclick="filterWorks('game')">ゲーム制作</button>
+        <button onclick="filterWorks('video')">動画制作</button>
+        <button onclick="filterWorks('2Dmodel')">2D制作</button>
+        <button onclick="filterWorks('3Dmodel')">3D制作</button>
+      </div>
+
+      <div class="work-item game">
+        <work>
+          <section class="maincontent-type1">
+            <div>
+              <h1>ドタバタVRランド！</h1>
+              <p>ゲーム制作(チーム)</p>
+            </div>
+          </section>
+
+          <section class="sidebar">
+            <div>
+              <figure class="image">
+                <img src="Media/111_DVR-title.png" alt="" />
+              </figure>
+            </div>
+          </section>
+          <section class="sidebar">
+            <div>
+              <figure class="image">
+                <img src="Media/112_DVR-font.png" alt="" />
+              </figure>
+            </div>
+          </section>
+        </work>
+
+        <sub>
+          <section class="comment">
+            <div>
+              <h2>本格的なチーム制作 ※2026/06/10現在進行中</h2>
+              <p>
+                企画の立案からサーバーサイドにデバッグまで、11人のメンバーで全ての工程をこなします。「広大な遊園地の中に、世界観の異なる"ミニゲームのアトラクション"がある」という設定のカジュアルVRゲームです。※画像は開発初期の構想段階のものです。
+              </p>
+              <p>
+                私は主にプランナー的立ち位置として、各ミニゲームごとの簡易的な企画書の作成・環境音やフォントの加工に加え、ほぼ全てのゲーム内BGM/SEの厳選/監修をしました。
+              </p>
+              ・フォント:けいふぉんと
+            </div>
+          </section>
+        </sub>
+      </div>
+
+      <div class="work-item game">
+        <work>
+          <section class="maincontent-type1">
+            <div>
+              <h1>アナザーウェポン(仮称)</h1>
+              <p>ゲーム制作(企画書)</p>
+            </div>
+          </section>
+
+          <section class="sidebar">
+            <div>
+              <figure class="image">
+                <img src="Media/121_proposal-A.png" alt="" />
+              </figure>
+            </div>
+          </section>
+          <section class="sidebar">
+            <div>
+              <figure class="image">
+                <img src="Media/122_proposal-B.png" alt="" />
+              </figure>
+            </div>
+          </section>
+        </work>
+
+        <sub>
+          <section class="comment">
+            <div>
+              <h2>Virtual Realityの研究</h2>
+              <p>
+                今まであまり触れたことのない、"VRゲーム"へ挑戦しました。実際にVRゲームを体験したり、VRに落とし込むことのできるゲームを探してアイデアを集め、いわゆる"無双ゲー"の企画書を作成しました。
+              </p>
+            </div>
+          </section>
+        </sub>
+      </div>
+
+      <div class="work-item video">
+        <work>
+          <section class="maincontent-type1">
+            <div>
+              <h1>YouTubeチャンネルの新設</h1>
+              <p>動画制作</p>
+            </div>
+          </section>
+
+          <section class="sidebar">
+            <div>
+              <video
+                src="Media/131_OP-Video.mp4"
+                loop
+                controls
+                autoplay
+                muted
+                playsinline
+              ></video>
+            </div>
+          </section>
+          <section class="sidebar">
+            <div>
+              <video
+                src="Media/132_Game-Video.mp4"
+                loop
+                controls
+                autoplay
+                muted
+                playsinline
+              ></video>
+            </div>
+          </section>
+        </work>
+
+        <sub>
+          <section class="comment">
+            <div>
+              <h2>合成音声実況チャンネル</h2>
+              <p>
+                YouTube活動専用アカウントを作成し、複数のソフトや機材を活用しながら、趣味でゲーム実況動画を投稿しています。動画編集ソフトはAviUtl2を使用しており、音声エフェクト/カメラ移動/3D演出等を、このソフト1つで制作できます。
+              </p>
+
+              ♪不老不死／Losstime Life
+              <a href="https://www.losstime-life.com/"
+                >[https://www.losstime-life.com/]</a
+              >
+              ・AOmaterial:
+              <a href="https://aomaterial.com/">[https://aomaterial.com/]</a>
+              ・VOICEVOX:ずんだもん(立ち絵:Ly 様)／冥鳴ひまり(立ち絵:聡間まこと
+              様)／あんこもん(※スキン:自作)／東北きりたん(立ち絵:akihiyo 様)
+              <a href="https://voicevox.hiroshiba.jp/"
+                >[https://voicevox.hiroshiba.jp/]</a
+              >
+            </div>
+          </section>
+        </sub>
+      </div>
+
+      <div class="work-item 2Dmodel">
+        <work>
+          <section class="maincontent-type1">
+            <div>
+              <h1>Minecraft_スキン</h1>
+              <p>２D制作(Blockbench)</p>
+            </div>
+          </section>
+
+          <section class="sidebar">
+            <div>
+              <img src="Media/002_Org-Skin-3D.png" alt="" />
+            </div>
+          </section>
+          <section class="sidebar">
+            <div>
+              <img src="Media/043_Org-Skin-2D.png" alt="" />
+            </div>
+          </section>
+        </work>
+
+        <sub>
+          <section class="comment">
+            <div>
+              <h2>オリジナルキャラクターの作成</h2>
+              <p>
+                サンドボックスサバイバルゲーム「Minecraft」内で使用することのできるスキンです。キャラクターの設定や特徴を1から考え、動画投稿サイトなどを参考に自作したものです。現在は、私が運営しているYoutubeチャンネルのゲーム実況動画にも登場しています。
+              </p>
+            </div>
+          </section>
+        </sub>
+      </div>
+
+      <div class="work-item 3Dmodel">
+        <work>
+          <section class="maincontent-type2">
+            <div>
+              <h1>Minecraft_戦車</h1>
+              <p>３Ⅾ制作(Blender等)</p>
+            </div>
+          </section>
+
+          <section class="sidebar">
+            <div>
+              <video
+                src="Media/151_Tank-Video.mp4"
+                loop
+                controls
+                autoplay
+                muted
+                playsinline
+              ></video>
+            </div>
+          </section>
+        </work>
+
+        <sub>
+          <section class="comment">
+            <div>
+              <h2>3Dアニメーション初の試み</h2>
+              <p>
+                世界的に知名度の高いゲーム「Minecraft-JavaEdition」内で制作した機能付きの戦車を、動画配信サイトを参考に複数のソフトを駆使しながらBlenderに生成し、アニメーションを加えたものです。
+              </p>
+            </div>
+          </section>
+        </sub>
+      </div>
+
+      <div class="work-item game">
+        <work>
+          <section class="maincontent-type1">
+            <div>
+              <h1>三界(ThreeKai)</h1>
+              <p>ゲーム制作(Unity)</p>
+            </div>
+          </section>
+
+          <section class="sidebar">
+            <div>
+              <video
+                src="Media/161_TreeKai-Video.mp4"
+                loop
+                controls
+                autoplay
+                muted
+                playsinline
+              ></video>
+            </div>
+          </section>
+          <section class="sidebar">
+            <div>
+              <figure class="image">
+                <img src="Media/162_TreeKai-Image.png" alt="" />
+              </figure>
+            </div>
+          </section>
+        </work>
+
+        <sub>
+          <section class="comment">
+            <div>
+              <h2>初のUnity作品</h2>
+              <p>
+                ステージクリア型のスコアアタックゲームです。ステージを進むごとに斬撃や魔法弾といった攻撃手段が増え、操作の自由度が増していきます。また主人公(猫)のアニメーションは、ソフトやツールを駆使してすべて自主制作したものです。
+              </p>
+              BGM:♪Lonely explorer／Tak_mfk 様　♪境界の守り人／zippy
+              様　♪寂れた浜辺／禊-misogi- より
+            </div>
+          </section>
+        </sub>
+      </div>
+      <div class="work-item game">
+        <work>
+          <section class="maincontent-type1">
+            <div>
+              <h1>Submarine Nauts Aqua</h1>
+              <p>ゲーム制作(コンソール)</p>
+            </div>
+          </section>
+
+          <section class="sidebar">
+            <div>
+              <figure class="image">
+                <img src="Media/171_SMNA-title.png" alt="" />
+              </figure>
+            </div>
+          </section>
+          <section class="sidebar">
+            <div>
+              <figure class="image">
+                <img src="Media/172_SMNA-Image.png" alt="" />
+              </figure>
+            </div>
+          </section>
+        </work>
+
+        <sub>
+          <section class="comment">
+            <div>
+              <h2>アクション系ゲーム初の作品</h2>
+              <p>
+                "潜水艦ノーツアクア"に乗り、次々と襲い掛かってくる敵を倒してスコアを稼いでゆくゲームです。
+              </p>
+            </div>
+          </section>
+        </sub>
+      </div>
+
+      <div class="work-item 3Dmodel">
+        <work>
+          <section class="maincontent-type2">
+            <div>
+              <h1>ジムワイパーヒュー</h1>
+              <p>３Ⅾ制作(Maya)</p>
+            </div>
+          </section>
+
+          <section class="sidebar">
+            <div>
+              <figure class="image">
+                <img src="Media/181_spla3.png" alt="" />
+              </figure>
+            </div>
+          </section>
+        </work>
+
+        <sub>
+          <section class="comment">
+            <div>
+              <h2>初の3D作品</h2>
+              <p>
+                ゲーム「スプラトゥーン３」に登場する、インクの斬撃を飛ばす"ジムワイパー"という武器の亜種版を３Ｄで作ったものです。
+              </p>
+            </div>
+          </section>
+        </sub>
+      </div>
+
+      <!---->
+    </div>
+  </body>
+</html>
